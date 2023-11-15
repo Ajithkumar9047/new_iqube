@@ -20,14 +20,14 @@ pactum.stash.addDataTemplate(
                 "TransactionId": "pay1821", 
                 "ReasonForCancellation":"Test NGD",
                 "CustomerRemarks": "NGD TEST",
-                "IsCancellationCompleted": true,
+                "IsCancellationCompleted": false,
                 "RefundStatus" : "awaited",
                 "RefundType": "F&F",
                 "RefundDetails":null
             }
         }
 )
-Given('Post the booking without user id', async function () {
+Given('Post the booking without a user id', async function () {
     spec["POST".toLowerCase()]("/Cancellation");
     spec.withJson({ '@DATA:TEMPLATE@': "UserId" });
     spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
@@ -48,14 +48,14 @@ pactum.stash.addDataTemplate(
     "TransactionId": "pay1821",
     "ReasonForCancellation":"Test NGD",
     "CustomerRemarks": "NGD TEST",
-    "IsCancellationCompleted": true,
+    "IsCancellationCompleted": false,
     "RefundStatus" : "awaited",
     "RefundType": "F&F",
     "RefundDetails":null
         }
     }
 )
-Given('Post the booking with invalid user id', async function () {
+Given('Post the booking with an invalid user id', async function () {
 spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "invalidUserId" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
@@ -76,7 +76,7 @@ pactum.stash.addDataTemplate(
             "TransactionId": "pay1821", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
             "RefundStatus" : "awaited",
             "RefundDetails":null
@@ -85,7 +85,7 @@ pactum.stash.addDataTemplate(
 
 
 )
-Given('Post the booking without Booking id', async function () {
+Given('Post the booking without a Booking id', async function () {
 spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "UserIdmismatch" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
@@ -105,14 +105,14 @@ pactum.stash.addDataTemplate(
             "TransactionId": null, 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundStatus" : "awaited",
             "RefundType": "F&F",
             "RefundDetails":null
         }
     }
 )
-Given('Post the booking without Transaction id', async function () {
+Given('Post the booking without a Transaction id', async function () {
 spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "TranscationId" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
@@ -132,14 +132,14 @@ pactum.stash.addDataTemplate(
             "TransactionId": "pay1821", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
             "RefundStatus" : "awaited",
             "RefundDetails":null
         }
     }
 )
-Given('Post the booking without Payment id', async function () {
+Given('Post the booking without a Payment id', async function () {
 spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "paymentId" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
@@ -160,7 +160,7 @@ pactum.stash.addDataTemplate(
             "TransactionId": "pay1821", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
             "RefundStatus" : "awaited",
             "RefundDetails":null
@@ -188,7 +188,7 @@ pactum.stash.addDataTemplate(
             "TransactionId": "pay1821", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
             "RefundStatus" : "awaited",
             "RefundDetails":null
@@ -215,7 +215,7 @@ pactum.stash.addDataTemplate(
             "TransactionId": "pay1821", 
             "ReasonForCancellation":null,
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
             "RefundStatus" : "awaited",
             "RefundDetails":null
@@ -258,7 +258,7 @@ pactum.stash.addDataTemplate(
         }
     }
 )
-Given('Post the booking to the Refund Status awaited  with Refund details', async function () {
+Given('Post the booking to Refund Status as awaited with Refund details', async function () {
 spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "Awaited_refunddetails" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
@@ -287,7 +287,7 @@ pactum.stash.addDataTemplate(
         }
     }
 )
-Given('Post the booking  with IsCancellation Completed is true', async function () {
+Given('Post the booking with IsCancellation Completed as true', async function () {
 spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "with_isCancellationcompletion" }); 
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')   
@@ -307,7 +307,7 @@ pactum.stash.addDataTemplate(
             "TransactionId": "pay1821", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
             "RefundStatus" : "confirmed",
             "RefundDetails": {
@@ -321,7 +321,7 @@ pactum.stash.addDataTemplate(
         }
     }
 )
-Given('Post the booking with invalid refund date', async function () {
+Given('Post the booking with an invalid refund date', async function () {
 spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "Refund_issue_date" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
@@ -342,7 +342,7 @@ pactum.stash.addDataTemplate(
             "TransactionId": "pay1821", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
             "RefundStatus" : "confirmed",
             "RefundDetails": {
@@ -356,7 +356,7 @@ pactum.stash.addDataTemplate(
         }
     }
 )
-Given('Post the booking with Refund _bank_ref_no invalid', async function () {
+Given('Post the booking with an invalid Refund Bank Reference number', async function () {
 spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "Refund_bank_ref_no" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
@@ -377,7 +377,7 @@ pactum.stash.addDataTemplate(
     "TransactionId": "pay1821", 
     "ReasonForCancellation":"Test NGD",
     "CustomerRemarks": "NGD TEST",
-    "IsCancellationCompleted": true,
+    "IsCancellationCompleted": false,
     "RefundType": "F&F",
     "RefundStatus" : "confirmed",
     "RefundDetails": {
@@ -392,7 +392,7 @@ pactum.stash.addDataTemplate(
     }
     }
 )
-Given('Post the booking with invalid refund amount', async function () {
+Given('Post the booking with an invalid refund amount', async function () {
 spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "Refund_amt" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
@@ -414,7 +414,7 @@ pactum.stash.addDataTemplate(
             "TransactionId": "pay1821", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
             "RefundStatus" : "confirmed",
             "RefundDetails": {
@@ -428,7 +428,7 @@ pactum.stash.addDataTemplate(
         }
     }
 )
-Given('Post the booking with invalid order amount', async function () {
+Given('Post the booking with an invalid order amount', async function () {
 spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "Order_amt" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
@@ -450,16 +450,9 @@ pactum.stash.addDataTemplate(
             "TransactionId": "pay1821",
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
-            "RefundStatus" : "confirmed",
-            "RefundDetails": {
-                "RejectionReason": null,
-                "Refund_issue_date": "2023-04-18",
-                "Refund_bank_ref_no": "312009490820",
-                "Refund_amt": 5000.00,
-                "Order_amt": 5000.00
-            }
+            "RefundStatus" : "awaited",
         
         }
     }
@@ -486,20 +479,14 @@ pactum.stash.addDataTemplate(
             "TransactionId": "pay1821",
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
-            "RefundStatus" : "confirmed" ,
-            "RefundDetails": {
-                "RejectionReason": null,
-                "Refund_issue_date": "2023-04-18",
-                "Refund_bank_ref_no": "312009490820",
-                "Refund_amt": 5000.00,
-                "Order_amt": 5000.00
-            }
+            "RefundStatus" : "awaited" ,
+            
         }
     }
 )
-Given('Post the after Vehicle delivery', async function () {
+Given('Post the booking after Vehicle delivery', async function () {
 spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "vechicledelivery" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
@@ -520,20 +507,13 @@ pactum.stash.addDataTemplate(
             "TransactionId": "pay1821",
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
-            "RefundStatus" : "confirmed" ,
-            "RefundDetails": {
-                "RejectionReason": null,
-                "Refund_issue_date": "2023-04-18",
-                "Refund_bank_ref_no": "312009490820",
-                "Refund_amt": 5000.00,
-                "Order_amt": 5000.00
-            }
+            "RefundStatus" : "awaited"
         }
     }
 )
-Given('Post the after FullPament', async function () {
+Given('Post the booking after Full Payment', async function () {
 spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "FullPaymentReceived" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
@@ -554,20 +534,14 @@ pactum.stash.addDataTemplate(
             "TransactionId": "pay1821",
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
-            "RefundStatus" : "confirmed" ,
-            "RefundDetails": {
-                "RejectionReason": null,
-                "Refund_issue_date": "2023-04-18",
-                "Refund_bank_ref_no": "312009490820",
-                "Refund_amt": 5000.00,
-                "Order_amt": 5000.00
-            }
+            "RefundStatus" : "awaited" ,
+            
         }
     }
 )
-Given('Post the after invoice', async function () {
+Given('Post the booking after invoice', async function () {
 spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "invoice" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
@@ -588,7 +562,7 @@ pactum.stash.addDataTemplate(
             "TransactionId": "pay1821",
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
             "RefundStatus" : "confirmed" ,
             "RefundDetails": {
@@ -602,7 +576,7 @@ pactum.stash.addDataTemplate(
         }
     }
 )
-Given("Post when the duplicate booking", async function () {
+Given("Post the booking as duplicate", async function () {
 spec["POST".toLowerCase()]("/Cancellation");
 spec.withJson({ '@DATA:TEMPLATE@': "duplicate_entry" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
@@ -616,7 +590,7 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
                                                            //cancellation during payment status awaited
 pactum.stash.addDataTemplate(
     {
-        awaited:
+        CCA_awaited:
         {
             "UserId": 7,
             "BookingId": 123,
@@ -624,10 +598,106 @@ pactum.stash.addDataTemplate(
             "CancellationInitiatedOn" : "2023-04-18",
             "PaymentID"  : 206,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "206", 
+            "TransactionId": "206",
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
+            "RefundType": "CCA",
+            "RefundStatus" : "awaited"
+            
+        }
+        
+    }
+)
+Given("Post the Cancellation request with refund type as CCA and refund status as Awaited", async function () {
+spec["POST".toLowerCase()]("/Cancellation");
+spec.withJson({ '@DATA:TEMPLATE@': "CCA_awaited" });
+spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
+});
+
+
+                                                               //cancellation during payment status confirmed
+pactum.stash.addDataTemplate(
+    {
+        CCA_Confirmed:
+        {
+            "UserId": 7,
+            "BookingId": 123,
+            "CancellationId" : "1301714423",
+            "CancellationInitiatedOn" : "2023-04-18",
+            "PaymentID"  : 206,
+            "RefTransactionId":"IQ-10411",
+            "TransactionId": "206",
+            "ReasonForCancellation":"Test NGD",
+            "CustomerRemarks": "NGD TEST",
+            "IsCancellationCompleted": false,
+            "RefundType": "CCA",
+            "RefundStatus" : "confirmed" ,
+            "RefundDetails": {
+                "RejectionReason": null,
+                "Refund_issue_date": "2023-04-18",
+                "Refund_bank_ref_no": "312009490820",
+                "Refund_amt": 5000.00,
+                "Order_amt": 5000.00
+            }
+        }
+        
+    }
+)
+Given("Post the Cancellation request with refund type as CCA and refund status as Confirmed", async function () {
+spec["POST".toLowerCase()]("/Cancellation");
+spec.withJson({ '@DATA:TEMPLATE@': "CCA_Confirmed" });
+spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
+});
+
+
+                                                        //cancellation during payment status failed
+pactum.stash.addDataTemplate(
+    {
+        CCA_Failed:
+        {
+            "UserId": 7,
+            "BookingId": 123,
+            "CancellationId" : "1301714423",
+            "CancellationInitiatedOn" : "2023-04-18",
+            "PaymentID"  : 206,
+            "RefTransactionId":"IQ-10411",
+            "TransactionId": "206",
+            "ReasonForCancellation":"Test NGD",
+            "CustomerRemarks": "NGD TEST",
+            "IsCancellationCompleted": false,
+            "RefundType": "CCA",
+            "RefundStatus" : "failed",
+            "RefundDetails": {
+                "RejectionReason": "test failed",
+                "Refund_issue_date": "2023-04-18",
+                "Refund_bank_ref_no": "312009490820",
+                "Refund_amt": 5000.00,
+                "Order_amt": 5000.00
+            }
+        }
+        
+    }
+)
+Given("Post the Cancellation request with refund type as CCA and refund status as Failed", async function () {
+spec["POST".toLowerCase()]("/Cancellation");
+spec.withJson({ '@DATA:TEMPLATE@': "CCA_Failed" });
+spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
+});
+pactum.stash.addDataTemplate(
+    {
+        FF_awaited:
+        {
+            "UserId": 7,
+            "BookingId": 123,
+            "CancellationId" : "1301714423",
+            "CancellationInitiatedOn" : "2023-04-18",
+            "PaymentID"  : 206,
+            "RefTransactionId":"IQ-10411",
+            "TransactionId": "206",
+            "ReasonForCancellation":"Test NGD",
+            "CustomerRemarks": "NGD TEST",
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
             "RefundStatus" : "awaited"
             
@@ -635,28 +705,28 @@ pactum.stash.addDataTemplate(
         
     }
 )
-Given("Post the Cancellation request with refund status as Awaited", async function () {
+Given("Post the Cancellation request with refund sttype as F&F and refund status as awaited", async function () {
 spec["POST".toLowerCase()]("/Cancellation");
-spec.withJson({ '@DATA:TEMPLATE@': "awaited" });
-spec.withHeaders('token', '205698As3jDKskogPt5ab65360')    
+spec.withJson({ '@DATA:TEMPLATE@': "FF_awaited" });
+spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
 
                                                                //cancellation during payment status confirmed
 pactum.stash.addDataTemplate(
     {
-        Confirmed:
+        FF_Confirmed:
         {
             "UserId": 7,
-            "BookingId":123,
+            "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  :206,
+            "PaymentID"  : 206,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "206", 
+            "TransactionId": "206",
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
             "RefundStatus" : "confirmed" ,
             "RefundDetails": {
@@ -670,9 +740,9 @@ pactum.stash.addDataTemplate(
         
     }
 )
-Given("Post the Cancellation request with refund status as Confirmed", async function () {
+Given("Post the Cancellation request with refund type as F&F and refund status as confirmed", async function () {
 spec["POST".toLowerCase()]("/Cancellation");
-spec.withJson({ '@DATA:TEMPLATE@': "Confirmed" });
+spec.withJson({ '@DATA:TEMPLATE@': "FF_Confirmed" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
@@ -680,18 +750,18 @@ spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
                                                         //cancellation during payment status failed
 pactum.stash.addDataTemplate(
     {
-        Failed:
+        FF_Failed:
         {
-            "UserId": 9,
+            "UserId": 7,
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  :206,
+            "PaymentID"  : 206,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "206", 
+            "TransactionId": "206",
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
             "RefundStatus" : "failed",
             "RefundDetails": {
@@ -705,13 +775,13 @@ pactum.stash.addDataTemplate(
         
     }
 )
-Given("Post the Cancellation request with refund status as Failed", async function () {
+Given("Post the Cancellation request with refund type as F&F and refund status as failed", async function () {
 spec["POST".toLowerCase()]("/Cancellation");
-spec.withJson({ '@DATA:TEMPLATE@': "Failed" });
+spec.withJson({ '@DATA:TEMPLATE@': "FF_Failed" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
-                                                               
+
 
 
 

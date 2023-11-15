@@ -1,4 +1,5 @@
-Feature:As s scheduler I want to check the Cancellation process, so that I can initiate the auto refund
+Feature:As a scheduler I want to check the Cancellation process for outside the auto refund period, 
+        so that I can initiate the auto refund process within the website itself.
       
       Scenario: Should verify the cancellation process when the user id is empty
             Given Post the booking without user id
@@ -9,7 +10,7 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
                   "response": "User Id is required"
                   }
                   """
-      Scenario: Should verify the cancellation process when the  user id is invalid
+      Scenario: Should verify the cancellation process when the user id is invalid
             Given Post the booking with invalid user id
             When I receive a response
                   Then I expect the response as
@@ -18,7 +19,7 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
                   "response": "Booking not available"
                   }
                   """
-      Scenario: Should verify the cancellation process when the  user id and Booking id Mismatch
+      Scenario: Should verify the cancellation process when the user id and Booking id were Mismatch
             Given Post the booking without Booking id
             When I receive a response
                   Then I expect the response as
@@ -27,7 +28,7 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
                   "response": "Booking not available"
                   }
                   """
-      Scenario: Should verify the cancellation process when the  Transaction id is empty
+      Scenario: Should verify the cancellation process when the Transaction id is empty
             Given Post the booking without Transaction id
             When I receive a response
                   Then I expect the response as
@@ -36,7 +37,7 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
                   "response":"Transaction Id is required"
                   }
                   """
-      Scenario: Should verify the cancellation process when the the Payment id is empty
+      Scenario: Should verify the cancellation process when the Payment id is empty
             Given Post the booking without Payment id
             When I receive a response
                   Then I expect the response as
@@ -75,7 +76,7 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
 
 
 
-      Scenario: Should verify the cancellation process when the Refund Status awaited  with Refund details
+      Scenario: Should verify the cancellation process when the Refund Status is awaited with Refund details
             Given Post the booking to the Refund Status awaited  with Refund details
             When I receive a response
             Then I expect the response as
@@ -84,8 +85,8 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
             "response": "RefundDetails are available during Refund Awaited"
             }
             """
-      Scenario: Should verify the cancellation process when the IsCancellation Completed is true  
-            Given Post the booking  with IsCancellation Completed is true
+      Scenario: Should verify the cancellation process when the IsCancellation Completed is true and with the refund details
+            Given Post the booking with IsCancellation Completed is true
             When I receive a response
             Then I expect the response as
             """
@@ -94,7 +95,7 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
             }
             """
 
-      Scenario: Should verify the cancellation process when the refund status available but refund  issue date is invalid
+      Scenario: Should verify the cancellation process when the refund status available but refund issue date is invalid
             Given Post the booking with invalid refund date
             When I receive a response
             Then I expect the response as
@@ -116,7 +117,7 @@ Feature:As s scheduler I want to check the Cancellation process, so that I can i
 
 
 
-      Scenario: Should verify the cancellation process when the refund status available but refund  amount is invalid
+      Scenario: Should verify the cancellation process when the refund status available but refund amount is invalid
             Given Post the booking with invalid refund amount
             When I receive a response
             Then I expect the response as

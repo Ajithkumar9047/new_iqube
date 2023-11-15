@@ -1,0 +1,24 @@
+{
+  "name": "IQUBE_Report missing datas validation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test2": "cucumber-js features -f json:cucumber_report.json",
+    "report": "node index.js"
+  },
+  "keywords": [],
+  "token": "205698As3jDKskogPt5ab65360",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.1.0",
+    "pactum": "^3.3.3"
+  },
+  "dependencies": {
+    "cucumber": "^6.0.7",
+    "cucumber-html-reporter": "^6.0.0",
+    "html": "^1.0.0",
+    "reporter": "^0.1.0"
+  }
+}

@@ -344,7 +344,7 @@ pactum.stash.addDataTemplate(
             "RefundType": "F&F",
             "RefundStatus" : "failed",
             "RefundDetails": {
-                "RejectionReason": "test reason",
+                "RejectionReason": null,
                 "Refund_issue_date": "2023-04-18",
                 "Refund_bank_ref_no": null,
                 "Refund_amt": null,
@@ -373,7 +373,7 @@ pactum.stash.addDataTemplate(
             "TransactionId": "pay1821", 
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": true,
+            "IsCancellationCompleted": false,
             "RefundType": "F&F",
             "RefundStatus" : "failed",
             "RefundDetails": {

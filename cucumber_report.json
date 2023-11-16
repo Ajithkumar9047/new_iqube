@@ -1,12 +1,12 @@
 [
   {
-    "description": "            so that I can initiate the auto refund process directly within the website.",
+    "description": "",
     "elements": [
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-with-empty-user-id",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-with-empty-user-id",
         "keyword": "Scenario",
-        "line": 4,
+        "line": 3,
         "name": "Should verify the cancellation process with empty user id",
         "steps": [
           {
@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 341500
+              "duration": 380400
             }
           },
           {
@@ -22,51 +22,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 359699
+              "duration": 405999
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 4,
             "name": "Post the booking without a user id",
             "match": {
               "location": "features\\lead.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 1703299
+              "duration": 1051999
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 5,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 681890100
+              "duration": 1278539300
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"response\": \"User Id is required\"\n}",
-                "line": 8
+                "line": 7
               }
             ],
             "keyword": "Then ",
-            "line": 7,
+            "line": 6,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "passed",
-              "duration": 852600
+              "duration": 1613600
             }
           }
         ],
@@ -75,9 +75,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-with-an-invalid-user-id",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-with-an-invalid-user-id",
         "keyword": "Scenario",
-        "line": 13,
+        "line": 12,
         "name": "Should verify the cancellation process with an invalid user id",
         "steps": [
           {
@@ -85,7 +85,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 49200
+              "duration": 93000
             }
           },
           {
@@ -93,51 +93,52 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 47500
+              "duration": 91299
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 14,
+            "line": 13,
             "name": "Post the booking with an invalid user id",
             "match": {
               "location": "features\\lead.js:58"
             },
             "result": {
               "status": "passed",
-              "duration": 180599
+              "duration": 399100
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 15,
+            "line": 14,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 929083400
+              "duration": 3549364900
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"response\": \"Booking not available\"\n}",
-                "line": 17
+                "line": 16
               }
             ],
             "keyword": "Then ",
-            "line": 16,
+            "line": 15,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
-              "status": "passed",
-              "duration": 173799
+              "status": "failed",
+              "duration": 5177799,
+              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have property 'response' at '$'\n    at Expect.fail (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (E:\\iqb\\new_iqube\\features\\lead.js:794:29)"
             }
           }
         ],
@@ -146,9 +147,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-when-user-id-and-booking-id-mismatch",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-when-user-id-and-booking-id-mismatch",
         "keyword": "Scenario",
-        "line": 22,
+        "line": 21,
         "name": "Should verify the cancellation process when User id and Booking id mismatch",
         "steps": [
           {
@@ -156,7 +157,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 148099
+              "duration": 143199
             }
           },
           {
@@ -164,51 +165,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 37099
+              "duration": 45800
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 23,
+            "line": 22,
             "name": "Post the booking without a Booking id",
             "match": {
               "location": "features\\lead.js:88"
             },
             "result": {
               "status": "passed",
-              "duration": 196500
+              "duration": 165000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 24,
+            "line": 23,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 811965800
+              "duration": 987407000
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"response\": \"Booking not available\"\n}",
-                "line": 26
+                "line": 25
               }
             ],
             "keyword": "Then ",
-            "line": 25,
+            "line": 24,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "passed",
-              "duration": 539900
+              "duration": 1083700
             }
           }
         ],
@@ -217,9 +218,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-when-transaction-id-is-empty",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-when-transaction-id-is-empty",
         "keyword": "Scenario",
-        "line": 31,
+        "line": 30,
         "name": "Should verify the cancellation process when Transaction id is empty",
         "steps": [
           {
@@ -227,7 +228,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 135100
+              "duration": 169299
             }
           },
           {
@@ -235,51 +236,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 214999
+              "duration": 224799
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 32,
+            "line": 31,
             "name": "Post the booking without a Transaction id",
             "match": {
               "location": "features\\lead.js:115"
             },
             "result": {
               "status": "passed",
-              "duration": 799800
+              "duration": 771599
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 33,
+            "line": 32,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 644174600
+              "duration": 917046299
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"response\":\"Transaction Id is required\"\n}",
-                "line": 35
+                "line": 34
               }
             ],
             "keyword": "Then ",
-            "line": 34,
+            "line": 33,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "passed",
-              "duration": 486100
+              "duration": 479399
             }
           }
         ],
@@ -288,9 +289,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-when-payment-id-is-empty",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-when-payment-id-is-empty",
         "keyword": "Scenario",
-        "line": 40,
+        "line": 39,
         "name": "Should verify the cancellation process when Payment id is empty",
         "steps": [
           {
@@ -298,7 +299,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 153300
+              "duration": 152800
             }
           },
           {
@@ -306,51 +307,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 168799
+              "duration": 172100
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 41,
+            "line": 40,
             "name": "Post the booking without a Payment id",
             "match": {
               "location": "features\\lead.js:142"
             },
             "result": {
               "status": "passed",
-              "duration": 1588999
+              "duration": 1689500
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 42,
+            "line": 41,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 813455600
+              "duration": 908826899
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"response\": \"Payment Id is required\"\n}",
-                "line": 44
+                "line": 43
               }
             ],
             "keyword": "Then ",
-            "line": 43,
+            "line": 42,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "passed",
-              "duration": 466799
+              "duration": 786799
             }
           }
         ],
@@ -359,9 +360,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-when-cancellationinitiatedon-is-empty",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-when-cancellationinitiatedon-is-empty",
         "keyword": "Scenario",
-        "line": 49,
+        "line": 48,
         "name": "Should verify the cancellation process when CancellationInitiatedOn is empty",
         "steps": [
           {
@@ -369,7 +370,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 149799
+              "duration": 146900
             }
           },
           {
@@ -377,51 +378,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 173400
+              "duration": 147600
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 50,
+            "line": 49,
             "name": "Post the booking without CancellationInitiatedOn",
             "match": {
               "location": "features\\lead.js:170"
             },
             "result": {
               "status": "passed",
-              "duration": 531299
+              "duration": 621300
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 51,
+            "line": 50,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 751765699
+              "duration": 731843399
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"response\": \"Cancellation Initiated On is required\"\n}",
-                "line": 53
+                "line": 52
               }
             ],
             "keyword": "Then ",
-            "line": 52,
+            "line": 51,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "passed",
-              "duration": 301200
+              "duration": 518400
             }
           }
         ],
@@ -430,9 +431,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-when-cancellation-id-is-empty",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-when-cancellation-id-is-empty",
         "keyword": "Scenario",
-        "line": 58,
+        "line": 57,
         "name": "Should verify the cancellation process when Cancellation id is empty",
         "steps": [
           {
@@ -440,7 +441,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 106099
+              "duration": 134300
             }
           },
           {
@@ -448,51 +449,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 91099
+              "duration": 122400
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 59,
+            "line": 58,
             "name": "Post the booking without Cancellation id",
             "match": {
               "location": "features\\lead.js:198"
             },
             "result": {
               "status": "passed",
-              "duration": 431300
+              "duration": 694600
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 60,
+            "line": 59,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 876451500
+              "duration": 711719799
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"response\": \"Cancellation Id is required\"\n}",
-                "line": 62
+                "line": 61
               }
             ],
             "keyword": "Then ",
-            "line": 61,
+            "line": 60,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "passed",
-              "duration": 301899
+              "duration": 527800
             }
           }
         ],
@@ -501,9 +502,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-when-the-reasonforcancellation-is-empty",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-when-the-reasonforcancellation-is-empty",
         "keyword": "Scenario",
-        "line": 67,
+        "line": 66,
         "name": "Should verify the cancellation process when the ReasonForCancellation is empty",
         "steps": [
           {
@@ -511,7 +512,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 67299
+              "duration": 106700
             }
           },
           {
@@ -519,51 +520,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 65099
+              "duration": 108000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 68,
+            "line": 67,
             "name": "Post the booking without ReasonForCancellation",
             "match": {
               "location": "features\\lead.js:225"
             },
             "result": {
               "status": "passed",
-              "duration": 343900
+              "duration": 616299
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 69,
+            "line": 68,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 798272099
+              "duration": 959918700
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"response\": \"Reason For Cancellation is required\"\n}",
-                "line": 71
+                "line": 70
               }
             ],
             "keyword": "Then ",
-            "line": 70,
+            "line": 69,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "passed",
-              "duration": 337100
+              "duration": 499600
             }
           }
         ],
@@ -572,9 +573,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-when-refund-status-is-awaited-with-refund-details",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-when-refund-status-is-awaited-with-refund-details",
         "keyword": "Scenario",
-        "line": 79,
+        "line": 78,
         "name": "Should verify the cancellation process when Refund Status is awaited with Refund details",
         "steps": [
           {
@@ -582,7 +583,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 197199
+              "duration": 75100
             }
           },
           {
@@ -590,51 +591,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 132300
+              "duration": 354899
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 80,
+            "line": 79,
             "name": "Post the booking to Refund Status as awaited with Refund details",
             "match": {
               "location": "features\\lead.js:261"
             },
             "result": {
               "status": "passed",
-              "duration": 503899
+              "duration": 361800
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 81,
+            "line": 80,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 776589599
+              "duration": 910565199
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"response\": \"RefundDetails are available during Refund Awaited\"\n}",
-                "line": 83
+                "line": 82
               }
             ],
             "keyword": "Then ",
-            "line": 82,
+            "line": 81,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "passed",
-              "duration": 391499
+              "duration": 556099
             }
           }
         ],
@@ -643,9 +644,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-when-iscancellation-completed-is-true-with-the-refund-details",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-when-iscancellation-completed-is-true-with-the-refund-details",
         "keyword": "Scenario",
-        "line": 88,
+        "line": 87,
         "name": "Should verify the cancellation process when IsCancellation Completed is true with the refund details",
         "steps": [
           {
@@ -653,7 +654,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 105599
+              "duration": 112599
             }
           },
           {
@@ -661,51 +662,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 162200
+              "duration": 188799
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 89,
+            "line": 88,
             "name": "Post the booking with IsCancellation Completed as true",
             "match": {
               "location": "features\\lead.js:290"
             },
             "result": {
               "status": "passed",
-              "duration": 539099
+              "duration": 563899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 90,
+            "line": 89,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 811663000
+              "duration": 997355800
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"response\": \"IsCancellationCompleted should be false\"\n}",
-                "line": 92
+                "line": 91
               }
             ],
             "keyword": "Then ",
-            "line": 91,
+            "line": 90,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "passed",
-              "duration": 238399
+              "duration": 113099
             }
           }
         ],
@@ -714,9 +715,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-when-refund-status-as-confirmed-and-refund-issue-date-is-empty",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-when-refund-status-as-confirmed-and-refund-issue-date-is-empty",
         "keyword": "Scenario",
-        "line": 98,
+        "line": 97,
         "name": "Should verify the cancellation process when refund status as confirmed and Refund issue date is empty",
         "steps": [
           {
@@ -724,7 +725,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 54899
+              "duration": 27899
             }
           },
           {
@@ -732,52 +733,52 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 38400
+              "duration": 29200
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 99,
+            "line": 98,
             "name": "Post the booking with an invalid refund date",
             "match": {
               "location": "features\\lead.js:324"
             },
             "result": {
               "status": "passed",
-              "duration": 259900
+              "duration": 167200
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 100,
+            "line": 99,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 898788400
+              "duration": 923059100
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"response\": \"Refund Details not available\"\n}",
-                "line": 102
+                "content": "{\n\"response\": \"Missing mandatory paramteters in Refund details\"\n}",
+                "line": 101
               }
             ],
             "keyword": "Then ",
-            "line": 101,
+            "line": 100,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "failed",
-              "duration": 21813899,
-              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Refund Details not available' at '$.response' but found 'Invalid Request'\n    at Expect.fail (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (E:\\iqb\\new_iqube\\features\\lead.js:794:29)"
+              "duration": 21123500,
+              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Missing mandatory paramteters in Refund details' at '$.response' but found 'Invalid Request'\n    at Expect.fail (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (E:\\iqb\\new_iqube\\features\\lead.js:794:29)"
             }
           }
         ],
@@ -786,9 +787,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-when-refund-status-as-confirmed-and-refund-bank-reference-number-is-invalid",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-when-refund-status-as-confirmed-and-refund-bank-reference-number-is-invalid",
         "keyword": "Scenario",
-        "line": 108,
+        "line": 107,
         "name": "Should verify the cancellation process when refund status as confirmed and Refund Bank Reference number is invalid",
         "steps": [
           {
@@ -796,7 +797,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 43699
+              "duration": 63500
             }
           },
           {
@@ -804,52 +805,52 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 44900
+              "duration": 65999
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 109,
+            "line": 108,
             "name": "Post the booking with an invalid Refund Bank Reference number",
             "match": {
               "location": "features\\lead.js:359"
             },
             "result": {
               "status": "passed",
-              "duration": 255100
+              "duration": 365700
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 110,
+            "line": 109,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 836386100
+              "duration": 914281100
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"response\": \"Refund Details not available\"\n}",
-                "line": 112
+                "content": "{\n\"response\": \"Missing mandatory paramteters in Refund details\"\n}",
+                "line": 111
               }
             ],
             "keyword": "Then ",
-            "line": 111,
+            "line": 110,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "failed",
-              "duration": 22748900,
-              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Refund Details not available' at '$.response' but found 'Invalid Request'\n    at Expect.fail (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (E:\\iqb\\new_iqube\\features\\lead.js:794:29)"
+              "duration": 17506500,
+              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Missing mandatory paramteters in Refund details' at '$.response' but found 'Invalid Request'\n    at Expect.fail (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (E:\\iqb\\new_iqube\\features\\lead.js:794:29)"
             }
           }
         ],
@@ -858,9 +859,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-when-the-refund-status-as-confirmed-and-refund-amount-is-invalid",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-when-the-refund-status-as-confirmed-and-refund-amount-is-invalid",
         "keyword": "Scenario",
-        "line": 120,
+        "line": 119,
         "name": "Should verify the cancellation process when the refund status as confirmed and refund amount is invalid",
         "steps": [
           {
@@ -868,7 +869,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 61599
+              "duration": 84400
             }
           },
           {
@@ -876,52 +877,52 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 70600
+              "duration": 48399
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 121,
+            "line": 120,
             "name": "Post the booking with an invalid refund amount",
             "match": {
               "location": "features\\lead.js:395"
             },
             "result": {
               "status": "passed",
-              "duration": 434499
+              "duration": 405899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 122,
+            "line": 121,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 812221100
+              "duration": 978254000
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"response\": \"Refund Details not available\"\n}",
-                "line": 124
+                "content": "{\n\"response\": \"Missing mandatory paramteters in Refund details\"\n}",
+                "line": 123
               }
             ],
             "keyword": "Then ",
-            "line": 123,
+            "line": 122,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "failed",
-              "duration": 26353200,
-              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Refund Details not available' at '$.response' but found 'Invalid Request'\n    at Expect.fail (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (E:\\iqb\\new_iqube\\features\\lead.js:794:29)"
+              "duration": 22207599,
+              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Missing mandatory paramteters in Refund details' at '$.response' but found 'Invalid Request'\n    at Expect.fail (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (E:\\iqb\\new_iqube\\features\\lead.js:794:29)"
             }
           }
         ],
@@ -930,9 +931,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-when-refund-status-as-confirmed-and-order-amount-is-invalid",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-when-refund-status-as-confirmed-and-order-amount-is-invalid",
         "keyword": "Scenario",
-        "line": 130,
+        "line": 129,
         "name": "Should verify the cancellation process when refund status as confirmed and order amount is invalid",
         "steps": [
           {
@@ -940,7 +941,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 100300
+              "duration": 69800
             }
           },
           {
@@ -948,52 +949,52 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 130599
+              "duration": 52600
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 131,
+            "line": 130,
             "name": "Post the booking with an invalid order amount",
             "match": {
               "location": "features\\lead.js:431"
             },
             "result": {
               "status": "passed",
-              "duration": 757300
+              "duration": 281799
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 132,
+            "line": 131,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 756702200
+              "duration": 954354699
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"response\": \"Refund Details not available\"\n}",
-                "line": 134
+                "content": "{\n\"response\": \"Missing mandatory paramteters in Refund details\"\n}",
+                "line": 133
               }
             ],
             "keyword": "Then ",
-            "line": 133,
+            "line": 132,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "failed",
-              "duration": 25405099,
-              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Refund Details not available' at '$.response' but found 'Invalid Request'\n    at Expect.fail (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (E:\\iqb\\new_iqube\\features\\lead.js:794:29)"
+              "duration": 23946599,
+              "error_message": "AssertionError [ERR_ASSERTION]: Json doesn't have value 'Missing mandatory paramteters in Refund details' at '$.response' but found 'Invalid Request'\n    at Expect.fail (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:444:12)\n    at Expect._validateJsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:227:21)\n    at Expect.validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\models\\expect.js:54:10)\n    at Have._validate (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:111:26)\n    at Have.jsonLike (E:\\iqb\\new_iqube\\node_modules\\pactum\\src\\exports\\expect.js:54:10)\n    at World.<anonymous> (E:\\iqb\\new_iqube\\features\\lead.js:794:29)"
             }
           }
         ],
@@ -1002,9 +1003,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-when-offline-booking-is-true",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-when-offline-booking-is-true",
         "keyword": "Scenario",
-        "line": 140,
+        "line": 139,
         "name": "Should verify the cancellation process when offline booking is true",
         "steps": [
           {
@@ -1012,7 +1013,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 102699
+              "duration": 71599
             }
           },
           {
@@ -1020,51 +1021,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 134000
+              "duration": 57300
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 141,
+            "line": 140,
             "name": "Post the offline booking is true",
             "match": {
               "location": "features\\lead.js:460"
             },
             "result": {
               "status": "passed",
-              "duration": 752599
+              "duration": 303799
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 142,
+            "line": 141,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 826260199
+              "duration": 857670399
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"response\": \"Unable to cancel, This user Offline Booking \"\n}",
-                "line": 144
+                "line": 143
               }
             ],
             "keyword": "Then ",
-            "line": 143,
+            "line": 142,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "passed",
-              "duration": 336300
+              "duration": 264900
             }
           }
         ],
@@ -1073,9 +1074,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-after-vehicle-delivery",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-after-vehicle-delivery",
         "keyword": "Scenario",
-        "line": 149,
+        "line": 148,
         "name": "Should verify the cancellation process after Vehicle delivery",
         "steps": [
           {
@@ -1083,7 +1084,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 167500
+              "duration": 82299
             }
           },
           {
@@ -1091,51 +1092,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 92499
+              "duration": 77600
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 150,
+            "line": 149,
             "name": "Post the booking after Vehicle delivery",
             "match": {
               "location": "features\\lead.js:489"
             },
             "result": {
               "status": "passed",
-              "duration": 520700
+              "duration": 384999
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 151,
+            "line": 150,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 878967700
+              "duration": 1115744699
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"response\": \"Unable to cancel, Vehicle Delivered details available for this user\"\n}",
-                "line": 153
+                "line": 152
               }
             ],
             "keyword": "Then ",
-            "line": 152,
+            "line": 151,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "passed",
-              "duration": 273200
+              "duration": 377199
             }
           }
         ],
@@ -1144,9 +1145,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-after-invoice",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-after-invoice",
         "keyword": "Scenario",
-        "line": 158,
+        "line": 157,
         "name": "Should verify the cancellation process after invoice",
         "steps": [
           {
@@ -1154,7 +1155,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 102200
+              "duration": 123999
             }
           },
           {
@@ -1162,51 +1163,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 126299
+              "duration": 112800
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 159,
+            "line": 158,
             "name": "Post the booking after invoice",
             "match": {
               "location": "features\\lead.js:544"
             },
             "result": {
               "status": "passed",
-              "duration": 395200
+              "duration": 854999
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 160,
+            "line": 159,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 826967599
+              "duration": 1216394600
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"response\": \"Unable to cancel, Invoice details available for this user\"\n}",
-                "line": 162
+                "line": 161
               }
             ],
             "keyword": "Then ",
-            "line": 161,
+            "line": 160,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "passed",
-              "duration": 342100
+              "duration": 534699
             }
           }
         ],
@@ -1215,9 +1216,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-after-full-payment",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-after-full-payment",
         "keyword": "Scenario",
-        "line": 167,
+        "line": 166,
         "name": "Should verify the cancellation process after Full Payment",
         "steps": [
           {
@@ -1225,7 +1226,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 111400
+              "duration": 110000
             }
           },
           {
@@ -1233,51 +1234,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 102100
+              "duration": 158199
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 168,
+            "line": 167,
             "name": "Post the booking after Full Payment",
             "match": {
               "location": "features\\lead.js:516"
             },
             "result": {
               "status": "passed",
-              "duration": 528999
+              "duration": 1095599
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 169,
+            "line": 168,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 811435599
+              "duration": 746181299
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"response\": \"Unable to cancel, Fullpayment details available for this user\"\n}",
-                "line": 171
+                "line": 170
               }
             ],
             "keyword": "Then ",
-            "line": 170,
+            "line": 169,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "passed",
-              "duration": 369699
+              "duration": 324999
             }
           }
         ],
@@ -1286,9 +1287,9 @@
       },
       {
         "description": "",
-        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.;should-verify-the-cancellation-process-for-duplicate-booking",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-process-for-duplicate-booking",
         "keyword": "Scenario",
-        "line": 177,
+        "line": 176,
         "name": "Should verify the cancellation process for duplicate booking",
         "steps": [
           {
@@ -1296,7 +1297,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 92299
+              "duration": 85500
             }
           },
           {
@@ -1304,51 +1305,51 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 84699
+              "duration": 79199
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 178,
+            "line": 177,
             "name": "Post the booking as duplicate",
             "match": {
               "location": "features\\lead.js:579"
             },
             "result": {
               "status": "passed",
-              "duration": 508599
+              "duration": 471100
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 179,
+            "line": 178,
             "name": "I receive a response",
             "match": {
               "location": "features\\lead.js:788"
             },
             "result": {
               "status": "passed",
-              "duration": 781646999
+              "duration": 1094662100
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n\"response\":\"Booking Already Cancelled\"\n}",
-                "line": 181
+                "line": 180
               }
             ],
             "keyword": "Then ",
-            "line": 180,
+            "line": 179,
             "name": "I expect the response as",
             "match": {
               "location": "features\\lead.js:792"
             },
             "result": {
               "status": "passed",
-              "duration": 299800
+              "duration": 362700
             }
           }
         ],
@@ -1356,10 +1357,10 @@
         "type": "scenario"
       }
     ],
-    "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.",
+    "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.",
     "line": 1,
     "keyword": "Feature",
-    "name": "As a scheduler I want to verify the Cancellation process for users outside the auto-refund period.",
+    "name": "As a scheduler I want to verify the Cancellation process for users outside the auto-refund period.so that I can initiate the auto refund process directly within the website.",
     "tags": [],
     "uri": "features\\is_lead_inserted.feature"
   }

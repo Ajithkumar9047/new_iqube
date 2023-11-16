@@ -1,6 +1,5 @@
-Feature:As a scheduler I want to verify the Cancellation process for users outside the auto-refund period. 
-            so that I can initiate the auto refund process directly within the website.
-      
+Feature:As a scheduler I want to verify the Cancellation process for users outside the auto-refund period.so that I can initiate the auto refund process directly within the website.
+            
       Scenario: Should verify the cancellation process with empty user id
             Given Post the booking without a user id
             When I receive a response
@@ -46,7 +45,7 @@ Feature:As a scheduler I want to verify the Cancellation process for users outsi
                   "response": "Payment Id is required"
                   }
                   """
-      Scenario: Should verify the cancellation process when CancellationInitiatedOn is empty 
+      Scenario: Should verify the cancellation process when CancellationInitiatedOn is empty
             Given Post the booking without CancellationInitiatedOn
             When I receive a response
             Then I expect the response as
@@ -64,7 +63,7 @@ Feature:As a scheduler I want to verify the Cancellation process for users outsi
             "response": "Cancellation Id is required"
             }
             """
-      Scenario: Should verify the cancellation process when the ReasonForCancellation is empty 
+      Scenario: Should verify the cancellation process when the ReasonForCancellation is empty
             Given Post the booking without ReasonForCancellation
             When I receive a response
             Then I expect the response as
@@ -94,14 +93,40 @@ Feature:As a scheduler I want to verify the Cancellation process for users outsi
             "response": "IsCancellationCompleted should be false"
             }
             """
-
+      Scenario: Should verify the cancellation process when the RejectionReason is empty and RefundStatus as Confirmed
+            Given Post the booking with RejectionReason and RefundStatus as Confirmed
+            When I receive a response
+            Then I expect the response as
+            """
+            {
+            "response": "RejectionReason should be null or empty"
+            }
+            """
+      Scenario: Should verify the cancellation process when the RejectionReason is empty and RefundStatus as Failed
+            Given Post the booking without RejectionReason and RefundStatus as Failed
+            When I receive a response
+            Then I expect the response as
+            """
+            {
+            "response": "Missing mandatory paramteters in Refund details"
+            }
+            """
+      Scenario: Should verify the cancellation process when the Refund_issue_date is empty and RefundStatus as Failed
+            Given Post the booking without Refund_issue_date and RefundStatus as Failed
+            When I receive a response
+            Then I expect the response as
+            """
+            {
+            "response": "Missing mandatory paramteters in Refund details"
+            }
+            """
       Scenario: Should verify the cancellation process when refund status as confirmed and Refund issue date is empty
             Given Post the booking with an invalid refund date
             When I receive a response
             Then I expect the response as
             """
             {
-            "response": "Refund Details not available"
+            "response": "Missing mandatory paramteters in Refund details"
             }
             """
 
@@ -111,7 +136,7 @@ Feature:As a scheduler I want to verify the Cancellation process for users outsi
             Then I expect the response as
             """
             {
-            "response": "Refund Details not available"
+            "response": "Missing mandatory paramteters in Refund details"
             }
             """
 
@@ -123,7 +148,7 @@ Feature:As a scheduler I want to verify the Cancellation process for users outsi
             Then I expect the response as
             """
             {
-            "response": "Refund Details not available"
+            "response": "Missing mandatory paramteters in Refund details"
             }
             """
 
@@ -133,7 +158,7 @@ Feature:As a scheduler I want to verify the Cancellation process for users outsi
             Then I expect the response as
             """
             {
-            "response": "Refund Details not available"
+            "response": "Missing mandatory paramteters in Refund details"
             }
             """
 
@@ -185,63 +210,63 @@ Feature:As a scheduler I want to verify the Cancellation process for users outsi
             """
 
 #--------------------------------------------------------------------------------------------------------------------
-#       Scenario:Should verify the Cancellation request with refund type as CCA and refund status as Awaited
-#             Given Post the Cancellation request with refund type as CCA and refund status as Awaited
-#             When I receive a response
-#             Then I expect the response as
-#             """
-#             {
-#             "status": "Success"
-#             }
-#             """
-#       Scenario:Should verify the Cancellation request with refund type as CCA and refund status as Confirmed
-#             Given Post the Cancellation request with refund type as CCA and refund status as Confirmed
-#             When I receive a response
-#             Then I expect the response as
-#             """
-#             {
-#             "status": "Success"
-#             }
-#             """
-#
-#       Scenario:Should verify the Cancellation request with refund type as CCA and refund status as Failed
-#             Given Post the Cancellation request with refund type as CCA and refund status as Failed
-#             When I receive a response
-#             Then I expect the response as
-#             """
-#             {
-#             "status": "Success"
-#             }
-#             """
-#--------------------------------------f&f--------------------------------------------------------------
+      # Scenario:Should verify the Cancellation request with refund type as CCA and refund status as Awaited
+      #       Given Post the Cancellation request with refund type as CCA and refund status as Awaited
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       }
+      #       """
+      # Scenario:Should verify the Cancellation request with refund type as CCA and refund status as Confirmed
+      #       Given Post the Cancellation request with refund type as CCA and refund status as Confirmed
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       }
+      #       """
 
-#       Scenario:Should verify the Cancellation request with refund type as F&F and refund status as awaited
-#             Given Post the Cancellation request with refund sttype as F&F and refund status as awaited
-#             When I receive a response
-#             Then I expect the response as
-#             """
-#             {
-#             "status": "Success"
-#             }
-#             """
-#       Scenario:Should verify the Cancellation request with refund type as F&F and refund status as confirmed
-#             Given Post the Cancellation request with refund type as F&F and refund status as confirmed
-#             When I receive a response
-#             Then I expect the response as
-#             """
-#             {
-#             "status": "Success"
-#             }
-#             """
-#       Scenario:Should verify the Cancellation request with refund type as F&F and refund status as failed
-#             Given Post the Cancellation request with refund type as F&F and refund status as failed
-#             When I receive a response
-#             Then I expect the response as
-#             """
-#             {
-#             "status": "Success"
-#             }
-#             """
+      # Scenario:Should verify the Cancellation request with refund type as CCA and refund status as Failed
+      #       Given Post the Cancellation request with refund type as CCA and refund status as Failed
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       }
+      #       """
+
+
+      # Scenario:Should verify the Cancellation request with refund type as F&F and refund status as awaited
+      #       Given Post the Cancellation request with refund sttype as F&F and refund status as awaited
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       }
+      #       """
+      # Scenario:Should verify the Cancellation request with refund type as F&F and refund status as confirmed
+      #       Given Post the Cancellation request with refund type as F&F and refund status as confirmed
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       }
+      #       """
+      # Scenario:Should verify the Cancellation request with refund type as F&F and refund status as failed
+      #       Given Post the Cancellation request with refund type as F&F and refund status as failed
+      #       When I receive a response
+      #       Then I expect the response as
+      #       """
+      #       {
+      #       "status": "Success"
+      #       }
+      #       """
 
 
 

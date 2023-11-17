@@ -39,7 +39,7 @@ pactum.stash.addDataTemplate(
     {
         invalidUserId:
         {
-    "UserId": 10,
+    "UserId":0,
     "BookingId": 123,
     "CancellationId" : "1301714423",
     "CancellationInitiatedOn" : "2023-04-18",
@@ -73,7 +73,7 @@ pactum.stash.addDataTemplate(
             "CancellationInitiatedOn" : "2023-04-18",
             "PaymentID"  : 1821,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "pay1821", 
+            "TransactionId": "pay1821",
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": false,
@@ -312,7 +312,7 @@ pactum.stash.addDataTemplate(
             "RefundStatus" : "confirmed",
             "RefundDetails": {
                 "RejectionReason": "test reason",
-                "Refund_issue_date": null,
+                "Refund_issue_date": "2023-04-18",
                 "Refund_bank_ref_no": "312009490820",
                 "Refund_amt": 5000.00,
                 "Order_amt": 5000.00
@@ -550,7 +550,7 @@ pactum.stash.addDataTemplate(
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": false,
             "RefundType": "F&F",
-            "RefundStatus" : "awaited",
+            "RefundStatus" : "awaited"
         
         }
     }
@@ -579,7 +579,7 @@ pactum.stash.addDataTemplate(
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": false,
             "RefundType": "F&F",
-            "RefundStatus" : "awaited" ,
+            "RefundStatus" : "awaited" 
             
         }
     }
@@ -634,7 +634,7 @@ pactum.stash.addDataTemplate(
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": false,
             "RefundType": "F&F",
-            "RefundStatus" : "awaited" ,
+            "RefundStatus" : "awaited"
             
         }
     }
@@ -660,7 +660,7 @@ pactum.stash.addDataTemplate(
             "TransactionId": "pay1821",
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": false,
+            "IsCancellationCompleted": true,
             "RefundType": "F&F",
             "RefundStatus" : "confirmed" ,
             "RefundDetails": {
@@ -680,9 +680,6 @@ spec.withJson({ '@DATA:TEMPLATE@': "duplicate_entry" });
 spec.withHeaders('token', '205698As3jDKskogPt5ab65360')
 });
 
-                                                  //Awaited with refund details
-
-
 //-------------------------------------------------------second report-----------------------------------------
 
                                                            //cancellation during payment status awaited
@@ -690,13 +687,13 @@ pactum.stash.addDataTemplate(
     {
         CCA_awaited:
         {
-            "UserId": 7,
+            "UserId": 1,
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 206,
+            "PaymentID"  : 1821,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "206",
+            "TransactionId": "pay1821",
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": false,
@@ -719,16 +716,16 @@ pactum.stash.addDataTemplate(
     {
         CCA_Confirmed:
         {
-            "UserId": 7,
+            "UserId": 1,
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 206,
+            "PaymentID"  : 1821,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "206",
+            "TransactionId": "pay1821",
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": false,
+            "IsCancellationCompleted": true,
             "RefundType": "CCA",
             "RefundStatus" : "confirmed" ,
             "RefundDetails": {
@@ -754,13 +751,13 @@ pactum.stash.addDataTemplate(
     {
         CCA_Failed:
         {
-            "UserId": 8,
+            "UserId": 7,
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 206,
+            "PaymentID"  : 1821,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "206",
+            "TransactionId": "pay1821",
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": false,
@@ -786,13 +783,13 @@ pactum.stash.addDataTemplate(
     {
         FF_awaited:
         {
-            "UserId": 1,
+            "UserId": 7,
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 206,
+            "PaymentID"  : 1821,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "206",
+            "TransactionId": "pay1821",
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": false,
@@ -815,16 +812,16 @@ pactum.stash.addDataTemplate(
     {
         FF_Confirmed:
         {
-            "UserId": 1,
+            "UserId": 7,
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 206,
+            "PaymentID"  : 1821,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "206",
+            "TransactionId": "pay1821",
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
-            "IsCancellationCompleted": false,
+            "IsCancellationCompleted": true,
             "RefundType": "F&F",
             "RefundStatus" : "confirmed" ,
             "RefundDetails": {
@@ -850,13 +847,13 @@ pactum.stash.addDataTemplate(
     {
         FF_Failed:
         {
-            "UserId": 9,
+            "UserId": 7,
             "BookingId": 123,
             "CancellationId" : "1301714423",
             "CancellationInitiatedOn" : "2023-04-18",
-            "PaymentID"  : 206,
+            "PaymentID"  : 1821,
             "RefTransactionId":"IQ-10411",
-            "TransactionId": "206",
+            "TransactionId": "pay1821",
             "ReasonForCancellation":"Test NGD",
             "CustomerRemarks": "NGD TEST",
             "IsCancellationCompleted": false,

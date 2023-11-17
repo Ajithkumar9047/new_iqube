@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 370400
+              "duration": 387600
             }
           },
           {
@@ -22,7 +22,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 951699
+              "duration": 442100
             }
           },
           {
@@ -35,7 +35,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1374199
+              "duration": 1255199
             }
           },
           {
@@ -44,17 +44,17 @@
             "line": 5,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 683661399
+              "duration": 659475000
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"response\": \"User Id is required\"\n}",
+                "content": "{\n\"response\": \"User Id is invalid or not present\"\n}",
                 "line": 7
               }
             ],
@@ -62,11 +62,11 @@
             "line": 6,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 1470199
+              "duration": 2057399
             }
           }
         ],
@@ -85,7 +85,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 79699
+              "duration": 106599
             }
           },
           {
@@ -93,7 +93,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 77700
+              "duration": 107300
             }
           },
           {
@@ -106,7 +106,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 305199
+              "duration": 432999
             }
           },
           {
@@ -115,17 +115,17 @@
             "line": 14,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 885853799
+              "duration": 1105254799
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"response\": \"Booking not available\"\n}",
+                "content": "{\n\"response\": \"User Id is invalid or not present\"\n}",
                 "line": 16
               }
             ],
@@ -133,11 +133,11 @@
             "line": 15,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 187200
+              "duration": 249199
             }
           }
         ],
@@ -156,7 +156,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 229499
+              "duration": 435000
             }
           },
           {
@@ -164,7 +164,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 59999
+              "duration": 105999
             }
           },
           {
@@ -177,7 +177,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 245200
+              "duration": 414999
             }
           },
           {
@@ -186,11 +186,11 @@
             "line": 23,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 822585900
+              "duration": 801091899
             }
           },
           {
@@ -204,11 +204,11 @@
             "line": 24,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 658499
+              "duration": 181499
             }
           }
         ],
@@ -227,7 +227,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1919900
+              "duration": 47500
             }
           },
           {
@@ -235,7 +235,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 213500
+              "duration": 56000
             }
           },
           {
@@ -248,7 +248,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 721199
+              "duration": 260400
             }
           },
           {
@@ -257,11 +257,11 @@
             "line": 32,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 778688400
+              "duration": 929789300
             }
           },
           {
@@ -275,11 +275,11 @@
             "line": 33,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 481400
+              "duration": 331000
             }
           }
         ],
@@ -298,7 +298,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 160199
+              "duration": 101799
             }
           },
           {
@@ -306,7 +306,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 139600
+              "duration": 92900
             }
           },
           {
@@ -319,7 +319,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1633600
+              "duration": 1056900
             }
           },
           {
@@ -328,17 +328,17 @@
             "line": 41,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 799366900
+              "duration": 813224599
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"response\": \"Payment Id is required\"\n}",
+                "content": "{\n\"response\": \"Payment Id is invalid or not present\"\n}",
                 "line": 43
               }
             ],
@@ -346,11 +346,11 @@
             "line": 42,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 166600
+              "duration": 123899
             }
           }
         ],
@@ -369,7 +369,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 39299
+              "duration": 36899
             }
           },
           {
@@ -377,7 +377,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 50200
+              "duration": 41199
             }
           },
           {
@@ -390,7 +390,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 173500
+              "duration": 155599
             }
           },
           {
@@ -399,11 +399,11 @@
             "line": 50,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 823997899
+              "duration": 738591099
             }
           },
           {
@@ -417,11 +417,11 @@
             "line": 51,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 215799
+              "duration": 165899
             }
           }
         ],
@@ -440,7 +440,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 82100
+              "duration": 39099
             }
           },
           {
@@ -448,7 +448,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 57900
+              "duration": 29800
             }
           },
           {
@@ -461,7 +461,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 339000
+              "duration": 162900
             }
           },
           {
@@ -470,11 +470,11 @@
             "line": 59,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 843011699
+              "duration": 1139641900
             }
           },
           {
@@ -488,11 +488,11 @@
             "line": 60,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 308000
+              "duration": 318700
             }
           }
         ],
@@ -511,7 +511,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 75399
+              "duration": 93500
             }
           },
           {
@@ -519,7 +519,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 74400
+              "duration": 90799
             }
           },
           {
@@ -532,7 +532,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 387499
+              "duration": 458799
             }
           },
           {
@@ -541,11 +541,11 @@
             "line": 68,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 882317200
+              "duration": 777126699
             }
           },
           {
@@ -559,11 +559,11 @@
             "line": 69,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 216699
+              "duration": 387199
             }
           }
         ],
@@ -582,7 +582,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 67699
+              "duration": 109300
             }
           },
           {
@@ -590,7 +590,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 97199
+              "duration": 140299
             }
           },
           {
@@ -603,7 +603,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 376499
+              "duration": 515399
             }
           },
           {
@@ -612,11 +612,11 @@
             "line": 80,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 1042726199
+              "duration": 695257200
             }
           },
           {
@@ -630,11 +630,11 @@
             "line": 81,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 127899
+              "duration": 316799
             }
           }
         ],
@@ -653,7 +653,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 41099
+              "duration": 142099
             }
           },
           {
@@ -661,7 +661,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 66100
+              "duration": 157399
             }
           },
           {
@@ -674,7 +674,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 205899
+              "duration": 562199
             }
           },
           {
@@ -683,17 +683,17 @@
             "line": 89,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 847831599
+              "duration": 775532099
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"response\": \"IsCancellationCompleted should be false\"\n}",
+                "content": "{\n\"response\": \"IsCancellationCompleted and RefundStatus mismatch\"\n}",
                 "line": 91
               }
             ],
@@ -701,11 +701,11 @@
             "line": 90,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 371899
+              "duration": 493799
             }
           }
         ],
@@ -724,7 +724,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 60600
+              "duration": 86199
             }
           },
           {
@@ -732,7 +732,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 54800
+              "duration": 78200
             }
           },
           {
@@ -745,7 +745,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 501899
+              "duration": 653099
             }
           },
           {
@@ -754,17 +754,17 @@
             "line": 98,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 1713030300
+              "duration": 814927299
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"response\": \"RejectionReason should be null or empty\"\n}",
+                "content": "{\n\"response\": \"Missing or Invalid mandatory paramteters in Refund details\"\n}",
                 "line": 100
               }
             ],
@@ -772,11 +772,11 @@
             "line": 99,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 533599
+              "duration": 968299
             }
           }
         ],
@@ -795,7 +795,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 49699
+              "duration": 101999
             }
           },
           {
@@ -803,7 +803,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 74300
+              "duration": 101500
             }
           },
           {
@@ -816,7 +816,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 313200
+              "duration": 702299
             }
           },
           {
@@ -825,11 +825,11 @@
             "line": 107,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 808689399
+              "duration": 777437299
             }
           },
           {
@@ -843,11 +843,11 @@
             "line": 108,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 427799
+              "duration": 367499
             }
           }
         ],
@@ -866,7 +866,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 127800
+              "duration": 94499
             }
           },
           {
@@ -874,7 +874,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 112800
+              "duration": 98000
             }
           },
           {
@@ -887,7 +887,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 618599
+              "duration": 534900
             }
           },
           {
@@ -896,11 +896,11 @@
             "line": 116,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 893792200
+              "duration": 791588200
             }
           },
           {
@@ -914,11 +914,11 @@
             "line": 117,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 410999
+              "duration": 341099
             }
           }
         ],
@@ -937,7 +937,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 113599
+              "duration": 95599
             }
           },
           {
@@ -945,7 +945,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 80499
+              "duration": 84399
             }
           },
           {
@@ -958,7 +958,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 507699
+              "duration": 505699
             }
           },
           {
@@ -967,17 +967,17 @@
             "line": 125,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 1144814999
+              "duration": 776566100
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"response\": \"Missing mandatory paramteters in Refund details\"\n}",
+                "content": "{\n\"response\": \"Missing or Invalid mandatory paramteters in Refund details\"\n}",
                 "line": 127
               }
             ],
@@ -985,11 +985,11 @@
             "line": 126,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 138099
+              "duration": 361299
             }
           }
         ],
@@ -1008,7 +1008,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 47299
+              "duration": 94999
             }
           },
           {
@@ -1016,7 +1016,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 28599
+              "duration": 97599
             }
           },
           {
@@ -1029,7 +1029,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 166999
+              "duration": 487999
             }
           },
           {
@@ -1038,17 +1038,17 @@
             "line": 135,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 657243699
+              "duration": 752573300
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"response\": \"Missing mandatory paramteters in Refund details\"\n}",
+                "content": "{\n\"response\": \"Missing or Invalid mandatory paramteters in Refund details\"\n}",
                 "line": 137
               }
             ],
@@ -1056,11 +1056,11 @@
             "line": 136,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 263300
+              "duration": 689100
             }
           }
         ],
@@ -1079,7 +1079,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 35100
+              "duration": 88700
             }
           },
           {
@@ -1087,7 +1087,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 22500
+              "duration": 72499
             }
           },
           {
@@ -1100,7 +1100,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 186599
+              "duration": 411600
             }
           },
           {
@@ -1109,17 +1109,17 @@
             "line": 147,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 790764299
+              "duration": 802763899
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"response\": \"Missing mandatory paramteters in Refund details\"\n}",
+                "content": "{\n\"response\": \"Missing or Invalid mandatory paramteters in Refund details\"\n}",
                 "line": 149
               }
             ],
@@ -1127,11 +1127,11 @@
             "line": 148,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 470600
+              "duration": 293999
             }
           }
         ],
@@ -1150,7 +1150,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 112500
+              "duration": 110400
             }
           },
           {
@@ -1171,7 +1171,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 556200
+              "duration": 579300
             }
           },
           {
@@ -1180,17 +1180,17 @@
             "line": 157,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 839020500
+              "duration": 689241800
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"response\": \"Missing mandatory paramteters in Refund details\"\n}",
+                "content": "{\n\"response\": \"Missing or Invalid mandatory paramteters in Refund details\"\n}",
                 "line": 159
               }
             ],
@@ -1198,11 +1198,11 @@
             "line": 158,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 377299
+              "duration": 246399
             }
           }
         ],
@@ -1221,7 +1221,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 70099
+              "duration": 33299
             }
           },
           {
@@ -1229,7 +1229,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 76900
+              "duration": 31599
             }
           },
           {
@@ -1242,7 +1242,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 581700
+              "duration": 188099
             }
           },
           {
@@ -1251,11 +1251,11 @@
             "line": 167,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 769536399
+              "duration": 1340237999
             }
           },
           {
@@ -1269,11 +1269,11 @@
             "line": 168,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 478900
+              "duration": 335100
             }
           }
         ],
@@ -1292,7 +1292,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 128600
+              "duration": 94300
             }
           },
           {
@@ -1300,7 +1300,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 89700
+              "duration": 68400
             }
           },
           {
@@ -1313,7 +1313,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 623199
+              "duration": 457199
             }
           },
           {
@@ -1322,11 +1322,11 @@
             "line": 176,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 734109799
+              "duration": 833638999
             }
           },
           {
@@ -1340,11 +1340,11 @@
             "line": 177,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 120999
+              "duration": 122099
             }
           }
         ],
@@ -1363,7 +1363,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 29799
+              "duration": 30599
             }
           },
           {
@@ -1371,7 +1371,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 24799
+              "duration": 27100
             }
           },
           {
@@ -1384,7 +1384,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 189800
+              "duration": 196699
             }
           },
           {
@@ -1393,11 +1393,11 @@
             "line": 185,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 785021700
+              "duration": 845418799
             }
           },
           {
@@ -1411,11 +1411,11 @@
             "line": 186,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 175800
+              "duration": 464299
             }
           }
         ],
@@ -1434,7 +1434,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 58600
+              "duration": 88299
             }
           },
           {
@@ -1442,7 +1442,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 52400
+              "duration": 33100
             }
           },
           {
@@ -1455,7 +1455,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 291700
+              "duration": 190300
             }
           },
           {
@@ -1464,11 +1464,11 @@
             "line": 194,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 873959899
+              "duration": 869248300
             }
           },
           {
@@ -1482,11 +1482,11 @@
             "line": 195,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 204400
+              "duration": 186399
             }
           }
         ],
@@ -1505,7 +1505,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 50400
+              "duration": 29899
             }
           },
           {
@@ -1513,7 +1513,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 54299
+              "duration": 27699
             }
           },
           {
@@ -1526,7 +1526,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 281500
+              "duration": 173399
             }
           },
           {
@@ -1535,11 +1535,11 @@
             "line": 204,
             "name": "I receive a response",
             "match": {
-              "location": "features\\lead.js:886"
+              "location": "features\\lead.js:883"
             },
             "result": {
               "status": "passed",
-              "duration": 994240799
+              "duration": 866572800
             }
           },
           {
@@ -1553,11 +1553,508 @@
             "line": 205,
             "name": "I expect the response as",
             "match": {
-              "location": "features\\lead.js:890"
+              "location": "features\\lead.js:887"
             },
             "result": {
               "status": "passed",
-              "duration": 369399
+              "duration": 262400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-request-with-refund-type-as-cca-and-refund-status-as-awaited",
+        "keyword": "Scenario",
+        "line": 213,
+        "name": "Should verify the Cancellation request with refund type as CCA and refund status as Awaited",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 72000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 74199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 214,
+            "name": "Post the Cancellation request with refund type as CCA and refund status as Awaited",
+            "match": {
+              "location": "features\\lead.js:707"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 491700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 215,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:883"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3573308800
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 217
+              }
+            ],
+            "keyword": "Then ",
+            "line": 216,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:887"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 399999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-request-with-refund-type-as-cca-and-refund-status-as-confirmed",
+        "keyword": "Scenario",
+        "line": 222,
+        "name": "Should verify the Cancellation request with refund type as CCA and refund status as Confirmed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 91099
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 86700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 223,
+            "name": "Post the Cancellation request with refund type as CCA and refund status as Confirmed",
+            "match": {
+              "location": "features\\lead.js:742"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 502700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 224,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:883"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4114712000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 226
+              }
+            ],
+            "keyword": "Then ",
+            "line": 225,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:887"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 314399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-request-with-refund-type-as-cca-and-refund-status-as-failed",
+        "keyword": "Scenario",
+        "line": 232,
+        "name": "Should verify the Cancellation request with refund type as CCA and refund status as Failed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 34199
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 233,
+            "name": "Post the Cancellation request with refund type as CCA and refund status as Failed",
+            "match": {
+              "location": "features\\lead.js:777"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 215999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 234,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:883"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3519739600
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 236
+              }
+            ],
+            "keyword": "Then ",
+            "line": 235,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:887"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 772900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-request-with-refund-type-as-f&f-and-refund-status-as-awaited",
+        "keyword": "Scenario",
+        "line": 243,
+        "name": "Should verify the Cancellation request with refund type as F&F and refund status as awaited",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 89800
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 85599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 244,
+            "name": "Post the Cancellation request with refund sttype as F&F and refund status as awaited",
+            "match": {
+              "location": "features\\lead.js:803"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 490500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 245,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:883"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3468017000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 247
+              }
+            ],
+            "keyword": "Then ",
+            "line": 246,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:887"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 301200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-request-with-refund-type-as-f&f-and-refund-status-as-failed",
+        "keyword": "Scenario",
+        "line": 252,
+        "name": "Should verify the Cancellation request with refund type as F&F and refund status as failed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 73700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 91700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 253,
+            "name": "Post the Cancellation request with refund type as F&F and refund status as failed",
+            "match": {
+              "location": "features\\lead.js:873"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 409000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 254,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:883"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3345243700
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 256
+              }
+            ],
+            "keyword": "Then ",
+            "line": 255,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:887"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 309000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-request-with-refund-type-as-f&f-and-refund-status-as-awaited",
+        "keyword": "Scenario",
+        "line": 261,
+        "name": "Should verify the Cancellation request with refund type as F&F and refund status as awaited",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 106399
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 84399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 262,
+            "name": "Post the Cancellation request with refund sttype as F&F and refund status as awaited",
+            "match": {
+              "location": "features\\lead.js:803"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 290199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 263,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:883"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3508794399
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 265
+              }
+            ],
+            "keyword": "Then ",
+            "line": 264,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:887"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 353900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-a-scheduler-i-want-to-verify-the-cancellation-process-for-users-outside-the-auto-refund-period.so-that-i-can-initiate-the-auto-refund-process-directly-within-the-website.;should-verify-the-cancellation-request-with-refund-type-as-f&f-and-refund-status-as-confirmed",
+        "keyword": "Scenario",
+        "line": 270,
+        "name": "Should verify the Cancellation request with refund type as F&F and refund status as confirmed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 182099
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 89999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 271,
+            "name": "Post the Cancellation request with refund type as F&F and refund status as confirmed",
+            "match": {
+              "location": "features\\lead.js:838"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 539599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 272,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\lead.js:883"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3317891500
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"status\": \"Success\"\n}",
+                "line": 274
+              }
+            ],
+            "keyword": "Then ",
+            "line": 273,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features\\lead.js:887"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 305799
             }
           }
         ],
